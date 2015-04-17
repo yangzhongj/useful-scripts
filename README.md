@@ -447,39 +447,3 @@ parseOpts "a,a-long|b,b-long:|c,c-long+" -a -b bv -- --c-long c.sh -p pv -q qv a
 ### 贡献者
 
 [Khotyn Huang](https://github.com/khotyn)指出`bash` `3.0`下使用有问题，并提供`bash` `3.0`的测试机器。
-
-:beer: [xpl](xpl) and [xpf](xpf)
-----------------------
-
-* `xpl`：在文件浏览器中打开指定的文件或文件夹。  
-\# `xpl`是`explorer`的缩写。
-* `xpf`: 在文件浏览器中打开指定的文件或文件夹，并选中。   
-\# `xpf`是`explorer and select file`的缩写。
-
-### 用法
-
-```bash
-xpl
-# 缺省打开当前目录
-xpl <文件或是目录>...
-# 打开多个文件或目录
-
-xpf
-# 缺省打开当前目录
-xpf <文件或是目录>...
-# 打开多个文件或目录
-```
-
-### 示例
-
-```bash
-xpl /path/to/dir
-xpl /path/to/foo.txt
-xpl /path/to/dir1 /path/to/foo1.txt
-xpf /path/to/foo1.txt
-xpf /path/to/dir1 /path/to/foo1.txt
-```
-
-### 贡献者
-
-[Linhua Tan](https://github.com/toolchainX)修复Linux的选定Bug。
